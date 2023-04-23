@@ -16,7 +16,7 @@ const tweets = [
     avatar: 'https://avatars.githubusercontent.com/u/43396684?v=4',
     text: 'gm',
     isProfileImageNft: false,
-    timestamp: '2023-06-01T12:00:00.000Z',
+    timestamp: '2022-06-01T12:00:00.000Z',
     },
     {
     displayName: 'PkAgrawal',
@@ -24,7 +24,7 @@ const tweets = [
     avatar: 'https://avatars.githubusercontent.com/u/43396684?v=4',
     text: 'gm',
     isProfileImageNft: false,
-    timestamp: '2023-06-01T12:00:00.000Z',
+    timestamp: '2022-05-01T12:00:00.000Z',
     },
     {
     displayName: 'PkAgrawal',
@@ -32,7 +32,7 @@ const tweets = [
     avatar: 'https://avatars.githubusercontent.com/u/43396684?v=4',
     text: 'gm',
     isProfileImageNft: false,
-    timestamp: '2023-06-01T12:00:00.000Z',
+    timestamp: '2022-04-01T12:00:00.000Z',
     },
     {
     displayName: 'PkAgrawal',
@@ -40,7 +40,7 @@ const tweets = [
     avatar: 'https://avatars.githubusercontent.com/u/43396684?v=4',
     text: 'gm',
     isProfileImageNft: false,
-    timestamp: '2023-06-01T12:00:00.000Z',
+    timestamp: '2022-05-01T12:00:00.000Z',
     },
     {
     displayName: 'PkAgrawal',
@@ -48,7 +48,7 @@ const tweets = [
     avatar: 'https://avatars.githubusercontent.com/u/43396684?v=4',
     text: 'gm',
     isProfileImageNft: false,
-    timestamp: '2023-06-01T12:00:00.000Z',
+    timestamp: '2022-11-01T12:00:00.000Z',
     },
 
 ]
@@ -67,7 +67,7 @@ function Feed(){
                 <Post
                   key={index}
                   displayName={tweet.displayName}
-                  userName={tweet.userName}
+                  userName={`${tweet.userName.slice(0, 4)}...${tweet.userName.slice(-4)}`}
                   avatar={tweet.avatar}
                   text={tweet.text}
                   isProfileImageNft={tweet.isProfileImageNft}
