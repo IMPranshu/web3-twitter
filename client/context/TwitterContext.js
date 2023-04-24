@@ -15,7 +15,7 @@ export const TwitterProvider = ({children}) => {
     const checkIfWalletIsConnected = async () => {
         if(!window.ethereum) return setAppStatus('noMetamask')
         try{
-            const addressArray = await BsWindowSidebar.ethereum.request({
+            const addressArray = await window.ethereum.request({
                 method: 'eth_accounts'
             })
             if(addressArray.length > 0) {
